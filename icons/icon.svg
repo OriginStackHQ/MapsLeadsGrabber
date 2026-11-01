@@ -1,0 +1,16 @@
+<!-- Maps Lead Grabber icon: blue map card, green fold, red location pin.
+     The rounded-corner clip keeps the SVG identical to the PNG set the
+     generator produces from icons/icon-master.png. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="256" height="256">
+  <defs>
+    <clipPath id="card">
+      <rect x="0" y="0" width="1024" height="1024" rx="192" ry="192"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <path d="M960 160v704c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h768c35.3 0 64 28.7 64 64z" fill="#2d8bf5"/>
+    <path d="M704 512c0-188.6-116.5-349.9-281.4-416H128c-35.3 0-64 28.7-64 64v704c0 35.3 28.7 64 64 64h294.6C587.5 861.9 704 700.6 704 512z" fill="#2d8bf5"/>
+    <path d="M101.7 922.3c8 3.6 16.9 5.7 26.3 5.7h768c9.4 0 18.3-2 26.3-5.7L512 512 101.7 922.3z" fill="#00b65e"/>
+    <path d="M702 447.8c0-106-86-192-192-192s-192 86-192 192c0 56.9 24.7 107.9 64 143.1l128 128 128-128c39.3-35.2 64-86.3 64-143.1z m-192 64c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64z" fill="#fb3f4a"/>
+  </g>
+</svg>
