@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Maps Lead Grabber - Dashboard</title>
+  <link rel="icon" href="icons/icon48.png" />
+  <link href="dashboard.css" rel="stylesheet" />
+  <script src="filterEngine.js"></script>
+  <script src="filterBuilder.js"></script>
+  <script src="lib/xlsx.full.min.js"></script>
+  <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Maps Lead Grabber</h1>
+      <p class="sub" id="summary">Leads: 0</p>
+    </div>
+    <div class="actions">
+      <button id="export-csv" class="primary">Export CSV</button>
+      <button id="export-xlsx" class="green">Export Excel (.xlsx)</button>
+      <button id="export-json">Export JSON</button>
+      <button id="clear" class="danger">Clear All</button>
+    </div>
+  </header>
+
+  <section class="filterbar">
+    <div class="filterbar-head">
+      <b>Filter Builder</b>
+      <span class="filter-hint">
+        pick a column + an operator, results and exports update live
+      </span>
+      <input id="search" type="search" placeholder="Search leads..." />
+    </div>
+
+    <div id="filter-builder"></div>
+
+    <div class="filter-add-buttons">
+      <button id="example-filter">Example</button>
+      <button id="clear-filter">Clear Filter</button>
+    </div>
+
+    <details class="json-details">
+      <summary>Advanced: edit as JSON</summary>
+      <textarea id="filter-input" rows="4" spellcheck="false"
+        placeholder='{"field":"website","op":"isNotEmpty"}'></textarea>
+      <div class="json-actions">
+        <button id="apply-json" class="primary">Apply JSON</button>
+      </div>
+    </details>
+
+    <p class="filter-status" id="filter-status"></p>
+  </section>
+
+  <main id="table-wrap">
+    <table id="leads-table">
+      <thead id="table-head"></thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <p id="empty" class="empty" hidden>
+      No leads match.<br />
+      Open a Google Maps search, press <b>Start Auto Extract</b>, then come back here.
+    </p>
+  </main>
+
+</body>
+
+</html>
