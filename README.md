@@ -140,9 +140,15 @@ The engine (`filterEngine.js`, pure logic, browser + Node) and the UI
 
 ## Install (Load unpacked)
 
+**Easiest way:** download
+[`MapsLeadsGrabber-v1.0.0.zip` from Releases](https://github.com/OriginStackHQ/MapsLeadsGrabber/releases/latest)
+and unzip it — then follow from step 3. Prefer git? Clone the repo and use
+its folder instead.
+
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top-right toggle)
-3. Click **Load unpacked** and select the cloned repo folder `MapsLeadsGrabber`
+3. Click **Load unpacked** and select the unzipped release folder (or the
+   cloned repo folder `MapsLeadsGrabber`)
 4. Open <https://www.google.com/maps>, search for something, and a small
    panel appears on the **right side**
 5. Click the toolbar icon (blue map pin) to open the Dashboard anytime
